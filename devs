@@ -776,7 +776,7 @@ end, function()
             PuppywareSettings.Aiming.TargetAim.Target = NearestTarget.Name
             if PuppywareSettings.Aiming.TargetAimSettings.NotificationAlert then
                 Notify({
-                    Title = "Puppyware 😳",
+                    Title = "TrixWare 😜",
                     Description = "Target: " .. NearestTarget.Name,
                     Duration = 3
                 })
@@ -804,7 +804,7 @@ WhitelistSection:AddTextbox("Username", nil, function(Text)
         PuppywareSettings.Aiming.Whitelist.Holder = Find(Text)
     else
         Notify({
-            Title = "Puppyware",
+            Title = "TrixWare",
             Description = "Player is not found.",
             Duration = 3
         })
@@ -815,21 +815,21 @@ WhitelistSection:AddButton('Add', function(State)
     if PuppywareSettings.Aiming.Whitelist.Holder ~= nil and Players:FindFirstChild(PuppywareSettings.Aiming.Whitelist.Holder) then
         if table.find(PuppywareSettings.Aiming.Whitelist.Players, PuppywareSettings.Aiming.Whitelist.Holder) then
             Notify({
-                Title = "Puppyware",
+                Title = "TrixWare",
                 Description = PuppywareSettings.Aiming.Whitelist.Holder .. " is whitelisted.",
                 Duration = 3
             })
         else
             Insert(PuppywareSettings.Aiming.Whitelist.Players, PuppywareSettings.Aiming.Whitelist.Holder)
             Notify({
-                Title = "Puppyware",
+                Title = "TrixWare",
                 Description = "Whitelisted " .. PuppywareSettings.Aiming.Whitelist.Holder,
                 Duration = 3
             })
         end
     else
         Notify({
-            Title = "Puppyware",
+            Title = "TrixWare",
             Description = "Player is not found.",
             Duration = 3
         })
@@ -841,20 +841,20 @@ WhitelistSection:AddButton('Remove', function()
         if table.find(PuppywareSettings.Aiming.Whitelist.Players, PuppywareSettings.Aiming.Whitelist.Holder) then
             Remove(PuppywareSettings.Aiming.Whitelist.Players, PuppywareSettings.Aiming.Whitelist.Holder)
             Notify({
-                Title = "Puppyware",
+                Title = "TrixWare",
                 Description = "Removed " .. PuppywareSettings.Aiming.Whitelist.Holder,
                 Duration = 5
             })
         else
             Notify({
-                Title = "Puppyware",
+                Title = "TrixWare",
                 Description = PuppywareSettings.Aiming.Whitelist.Holder .. " is not whitelisted.",
                 Duration = 5
             })
         end
     else
         Notify({
-            Title = "Puppyware",
+            Title = "TrixWare",
             Description = "Player is not found.",
             Duration = 3
         })
