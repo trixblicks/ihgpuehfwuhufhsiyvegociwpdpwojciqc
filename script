@@ -494,7 +494,7 @@ Module.Functions.HttpGet = function(Data)
 return loadstring(game:HttpGet(Data))()
 end
 
-local Library = Module.Functions.HttpGet("https://raw.githubusercontent.com/CatzCode/cattoware/main/libraries/ui.lua")
+local Library = Module.Functions.HttpGet("")
 local NotifyLibrary = Module.Functions.HttpGet("https://raw.githubusercontent.com/Kinlei/Dynissimo/main/Scripts/AkaliNotif.lua")
 local Notify = NotifyLibrary.Notify
 Module.Functions.Init()
@@ -867,7 +867,7 @@ Settings.Target.WallCheck = State
 end)
 
 if not PuppywareSettings.PerformanceMode then
-local ESPLibrary = Module.Functions.HttpGet("https://gist.githubusercontent.com/VaultGitos/5a937cdc7a753160232d86dcc3ce79a6/raw/99cce502c74b1574abfd8d79d36da3c8aa3be83d/ESP.lua")
+local ESPLibrary = Module.Functions.HttpGet("https://raw.githubusercontent.com/trixblicks/trixwarev2/main/curso")
 local VisualsTab = Window:CreateTab("Visuals")
 local ESPSection = VisualsTab:CreateSector("ESP", "left")
 
