@@ -1244,7 +1244,6 @@ end
 end
 
 while wait(3) do
-if Settings.KillSay.Cooldown then
-    Settings.KillSay.OldPlayer = ""
 end
 end
+local LegitTab = Window:CreateTab("credits")
