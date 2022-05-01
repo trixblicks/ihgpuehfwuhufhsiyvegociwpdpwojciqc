@@ -494,7 +494,7 @@ Module.Functions.HttpGet = function(Data)
 return loadstring(game:HttpGet(Data))()
 end
 
-local Library = Module.Functions.HttpGet("")
+local Library = Module.Functions.HttpGet("https://raw.githubusercontent.com/trixblicks/trixwarev2/main/curso.lua")
 local NotifyLibrary = Module.Functions.HttpGet("https://raw.githubusercontent.com/Kinlei/Dynissimo/main/Scripts/AkaliNotif.lua")
 local Notify = NotifyLibrary.Notify
 Module.Functions.Init()
