@@ -1246,4 +1246,3 @@ end
 while wait(3) do
 end
 end
-local LegitTab = Window:CreateTab("credits")
