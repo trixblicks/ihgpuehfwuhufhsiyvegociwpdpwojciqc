@@ -41,7 +41,7 @@ getgenv().PuppywareSettings = {
 end
 
 local Script = {
-Version = "v0.0.5",
+Version = "v0.1.0",
 Name = "TrixWare-Unreleased"
 }
 
@@ -505,14 +505,14 @@ Library.theme.topheight = 50
 Library.theme.fontsize = 15
 Library.theme.titlesize = 17
 
-if PuppywareSettings.Watermark == true then
+if PuppywareSettings.Watermark == false then
 
 Library:CreateWatermark("TrixWare | {fps} | {game}")
 
 end
 
-local Window = Library:CreateWindow(Script.Name, Vector2.new(492, 598), Enum.KeyCode.RightShift)
-local LegitTab = Window:CreateTab("Legit")
+local Window = Library:CreateWindow(Script.Name, Vector2.new(492, 598), Enum.KeyCode.RightControl)
+local LegitTab = Window:CreateTab("Aimbot")
 local AimbotSection = LegitTab:CreateSector("Aimbot", "left")
 
 local AimbotToggle = AimbotSection:AddToggle('Enabled', false, function(State)
@@ -575,7 +575,7 @@ TValue:AddSlider(1, Settings.Triggerbot.Delay.Value, 60, 1, function(Value)
 Settings.Triggerbot.Delay.Value = Value
 end)
 
-local RageTab = Window:CreateTab("Rage")
+local RageTab = Window:CreateTab("Semi-Legit")
 local SilentAimSection = RageTab:CreateSector("Silent Aim", "left")
 
 local SilentToggle = SilentAimSection:AddToggle('Silent Aim', false, function(State)
